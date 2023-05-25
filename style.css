@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+        "nav header"
+        "nav main-content";
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    grid-area: nav;
+    background-color: aqua;
+}
+
+header {
+    grid-area: header;
+    background-color: crimson;
+}
+
+.main-content {
+    grid-area: main-content;
+    background-color: gray;
+}
